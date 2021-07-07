@@ -1021,6 +1021,9 @@ ul, li {
   .motofiniti_main footer .copyright .footer_links a:not(:first-child)::after {
     left: 1px;
   }
+  .motofiniti_main .how_it_works .content .hit_one .img img {
+    margin-top: -15px;
+  }
 }
 
 @media (max-width: 340px) {
