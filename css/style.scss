@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    background-color: #fff;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        color: #CA1928;
+    }
+}
+
+ul, li{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.motofiniti_main{
+    .container{
+        max-width: 1670px;
+        padding: 0 15px;
+    }
+    .header{
+        h2{
+            font-size: 42px;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 32px;
+            margin-bottom: 55px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 3px;
+                background: #58595B;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+            }
+
+            span{
+                font-weight: 700;
+                color: #CA1928;
+            }
+        }
+        p{
+            line-height: 36px;
+        }
+    }
+    .home_banner{
+        background: url(../images/banner_bg.svg) no-repeat center;
+        background-size: cover;
+        padding: 250px 0 290px;
+        position: relative;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1100px;
+            height: 980px;
+            background: url(../images/banner_mobile.png) no-repeat bottom right;
+            background-size: contain;
+            right: 0;
+            bottom: 0;
+        }
+
+        .left_content{
+            width: 600px;
+        }
+
+        .logo{
+            margin-bottom: 70px;
+        }
+        .content{
+            margin-bottom: 58px;
+
+            h1{
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 28px;
+                letter-spacing: -0.5px;
+            }
+            p{
+                padding-right: 20px;
+                font-size: 24px;
+                line-height: 48px;
+            }
+        }
+        .action_btns{
+            a{
+                &:not(:last-child){margin-right: 30px;}
+            }
+        }
+    }
+    .discover{
+        padding: 100px 0 40px;
+        background: url(../images/discover_left.png) no-repeat center left; 
+        background-color: #F7F7F7;
+
+        .inner_wrapper{
+            max-width: 940px;
+            margin-left: auto;
+            width: 100%;
+        }
+
+        .header{
+            text-align: center;
+
+            p{
+                max-width: 750px;
+                margin: auto;
+            }
+        }
+        .list_features{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 55px;
+
+            .list_one{
+                width: calc(50% - 40px);
+                margin-bottom: 45px;
+                padding-left: 40px;
+
+                &:nth-child(2n){
+                    margin-left: auto;
+                }
+
+                h3{
+                    position: relative;
+                    color: #CA1928;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 18px;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: -34px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 50%;
+                        border: 3px solid #CA1928;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+    .explore{
+        padding: 150px 0 0;
+
+        &.categories{
+            padding-bottom: 150px;
+
+            .header{
+                p{
+                    max-width: 570px;
+                }
+            }
+
+            .col-lg-7{
+                img{
+                    padding-right: 0px;
+                    padding-left: 30px;
+                }
+            }
+            
+        }
+
+        .header{
+            h2{
+                &::after{
+                    left: 0;
+                    transform: none;
+                }
+            }
+        }
+
+        .col-lg-7{
+            img{
+                padding-right: 30px;
+            }
+        }
+
+        .listing{
+            margin-top: 50px;
+            ul{
+                li{
+                    padding-left: 35px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 17px;
+                        height: 17px;
+                        border-radius: 50%;
+                        border: 3px solid #CA1928;
+                    }
+                    
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .how_it_works{
+        background: #F7F7F7;
+        padding: 100px 0;
+
+        .header{
+            text-align: center;
+
+            p{
+                max-width: 1050px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .content{
+            margin-top: 70px;
+
+            .hit_one{
+                text-align: center;
+
+                .img{
+                    width: 200px;
+                    height: 180px;
+                    background: url(../images/Oval.png) no-repeat top center;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+
+                    img{
+                        max-width: 40px;
+                        margin-top: -28px;
+                    }
+                }
+                h3{
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #CA1928;
+                    margin-bottom: 20px;
+                }
+                p{
+                    line-height: 36px;
+                    width: 270px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    footer{
+        color: #fff;
+        background: #CA1928;
+
+        .footer_wrapper{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 60px 0;
+        }
+        .footer_heading{
+            font-size: 30px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 42px;
+        }
+        .download{
+            img{
+                max-width: 150px;
+                margin-right: 16px;
+            }
+        }
+        .follow{
+            a{
+                &:not(:last-child){
+                    img{
+                        margin-right: 14px;
+                    }
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);   
+                    }
+                }
+            }
+        }
+
+        .contact{
+            a{
+                color: #fff;
+                padding-left: 45px;
+                position: relative;
+                display: block;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 35px;
+                    height: 25px;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: url(../images/Email.svg) no-repeat center left;
+                    background-size: 28px;
+                }
+            }
+        }
+
+        .copyright{
+            padding: 22px 0;
+            border-top: 1px solid rgba($color: #fff, $alpha: 0.25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                color: #fff;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .footer_links{
+                a{
+                    color: #fff;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    position: relative;
+                    padding-left: 12px;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                    &:not(:first-child){
+                        &::after{
+                            content: '|';
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1700px){
+    body{font-size: 18px;}
+    .motofiniti_main .container{max-width: 1500px;}
+    .motofiniti_main .home_banner .logo{margin-bottom: 60px;}
+    .motofiniti_main .home_banner .logo img{width: 100%;}
+    .motofiniti_main .home_banner .left_content{width: 500px;}
+    .motofiniti_main .home_banner .content h1 {font-size: 40px;margin-bottom: 22px;}
+    .motofiniti_main .home_banner .content p {font-size: 20px;line-height: 42px;}
+    .motofiniti_main .home_banner .content {margin-bottom: 40px;}
+    .motofiniti_main .home_banner .action_btns a:not(:last-child){margin-right: 20px;}
+    .motofiniti_main .home_banner .action_btns a img{max-width: 200px;}
+    .motofiniti_main .home_banner::after{width: 970px; height: 840px;}
+    .motofiniti_main .home_banner{padding: 215px 0 265px;}
+    .motofiniti_main .header h2 {font-size: 38px;padding-bottom: 28px;margin-bottom: 42px;}
+    .motofiniti_main .discover .inner_wrapper{max-width: 850px;}
+    .motofiniti_main .discover{background-size: 46%;}
+    .motofiniti_main .discover .list_features .list_one h3{font-size: 22px;}
+    .motofiniti_main .discover .list_features .list_one h3::after{width: 16px; height: 16px; left: -32px;}
+    .motofiniti_main .discover .list_features{margin-top: 50px;}
+    .motofiniti_main .discover .list_features .list_one{margin-bottom: 30px; width: calc(50% - 30px);}
+    .motofiniti_main .discover{padding: 80px 0 30px;}
+    .motofiniti_main .explore{padding-top: 120px;}
+    .motofiniti_main .explore .listing {margin-top: 40px;}
+    .motofiniti_main .explore.categories{padding-bottom: 120px;}
+    .motofiniti_main .how_it_works{padding: 80px 0;}
+    .motofiniti_main .how_it_works .content{margin-top: 60px;}
+    .motofiniti_main .how_it_works .content .hit_one h3{font-size: 26px; margin-bottom: 16px;} 
+    .motofiniti_main footer .footer_heading{font-size: 26px; margin-bottom: 38px;}
+    .motofiniti_main footer .footer_wrapper{padding: 55px 0;}
+    .motofiniti_main .explore .listing ul li:not(:last-child){margin-bottom: 16px;}
+    .motofiniti_main .how_it_works .content .hit_one .img img{max-width: 35px;}
+}
+
+@media (max-width: 1599px){
+    body {font-size: 16px;}
+    .motofiniti_main .container{max-width: 1320px;}
+    .motofiniti_main .home_banner .left_content {width: 450px;}
+    .motofiniti_main .home_banner .logo{margin-bottom: 45px;}
+    .motofiniti_main .home_banner .content h1 {font-size: 36px; margin-bottom: 18px;}
+    .motofiniti_main .home_banner .content p {font-size: 18px;line-height: 38px;}
+    .motofiniti_main .home_banner .content {margin-bottom: 32px;}
+    .motofiniti_main .home_banner .action_btns a img{max-width: 170px;}
+    .motofiniti_main .home_banner .action_btns a:not(:last-child) {margin-right: 15px;}
+    .motofiniti_main .home_banner {padding: 170px 0 220px;}
+    .motofiniti_main .home_banner::after {width: 820px;height: 720px;}
+    .motofiniti_main .header h2 {font-size: 34px;padding-bottom: 24px;margin-bottom: 34px;}
+    .motofiniti_main .header p {line-height: 32px;}
+    .motofiniti_main .discover .list_features {margin-top: 40px;}
+    .motofiniti_main .discover .list_features .list_one h3 {font-size: 20px; margin-bottom: 15px;}
+    .motofiniti_main .discover .list_features .list_one h3::after {width: 14px;height: 14px;left: -28px;}
+    .motofiniti_main .discover .inner_wrapper {max-width: 750px;}
+    .motofiniti_main .discover .list_features .list_one {margin-bottom: 25px;width: calc(50% - 20px);}
+    .motofiniti_main .discover .header p {max-width: 550px;}
+    .motofiniti_main .discover {padding: 55px 0 20px;}
+    .motofiniti_main .discover .list_features .list_one p {font-size: 16px;line-height: 32px;}
+    .motofiniti_main .explore {padding-top: 80px;}
+    .motofiniti_main .explore.categories{padding-bottom: 80px;}
+    .motofiniti_main .explore .listing ul li::after{width: 14px; height: 14px;}
+    .motofiniti_main .explore .listing ul li{padding-left: 30px; margin-bottom: 10px !important;}
+    .motofiniti_main .explore .listing {margin-top: 25px;}
+    .motofiniti_main .how_it_works{padding: 60px 0;}
+    .motofiniti_main .how_it_works .content .hit_one .img {width: 175px;height: 145px; margin-bottom: 12px;}
+    .motofiniti_main .how_it_works .content .hit_one .img img {max-width: 28px; margin-top: -14px;}
+    .motofiniti_main .how_it_works .content .hit_one h3 {font-size: 22px;margin-bottom: 12px;}
+    .motofiniti_main footer .footer_heading {font-size: 22px;margin-bottom: 32px;}
+    .motofiniti_main footer .download img {max-width: 135px;margin-right: 12px;}
+    .motofiniti_main footer .contact a{padding-left: 38px;}
+    .motofiniti_main footer .contact a::after{width: 30px; height: 20px; background-size: 23px;}
+    .motofiniti_main footer .follow a:not(:last-child) img{margin-right: 12px;}
+    .motofiniti_main footer .follow a img{max-width: 35px;}
+    .motofiniti_main footer .footer_wrapper {padding: 50px 0;}
+    .motofiniti_main footer .copyright{padding: 16px 0;}
+    .motofiniti_main footer .copyright p, .motofiniti_main footer .copyright .footer_links a{font-size: 16px; line-height: 30px;}
+}
+
+@media (max-width: 1365px){
+    body{font-size: 14px;}
+    .motofiniti_main .container{max-width: 1140px;}
+    .motofiniti_main .home_banner .left_content {width: 400px;}
+    .motofiniti_main .home_banner .content h1 {font-size: 33px;margin-bottom: 14px;}
+    .motofiniti_main .home_banner .logo {margin-bottom: 38px;}
+    .motofiniti_main .home_banner .content p {font-size: 16px;line-height: 32px; padding-right: 0;}
+    .motofiniti_main .home_banner .action_btns a img {max-width: 140px;}
+    .motofiniti_main .home_banner .content{margin-bottom: 28px;}
+    .motofiniti_main .home_banner::after {width: 720px;height: 620px;}
+    .motofiniti_main .home_banner {padding: 165px 0 205px;}
+    .motofiniti_main .header h2 {font-size: 30px;padding-bottom: 20px;margin-bottom: 26px;}
+    .motofiniti_main .header p{line-height: 28px;}
+    .motofiniti_main .discover .list_features .list_one h3 {font-size: 18px; margin-bottom: 12px;}
+    .motofiniti_main .discover .list_features .list_one h3::after {width: 13px;height: 13px;left: -25px;}
+    .motofiniti_main .discover .list_features .list_one p {font-size: 14px;line-height: 28px;}
+    .motofiniti_main .discover .list_features .list_one {margin-bottom: 18px;width: calc(50% - 15px);}
+    .motofiniti_main .discover .inner_wrapper {max-width: 650px;}
+    .motofiniti_main .discover .list_features {margin-top: 30px;}
+    .motofiniti_main .discover {padding: 45px 0 15px;}
+    .motofiniti_main .explore {padding-top: 62px;}
+    .motofiniti_main .explore.categories{padding-bottom: 55px;}
+    .motofiniti_main .explore .listing {margin-top: 18px;}
+    .motofiniti_main .explore .listing ul li::after {width: 12px;height: 12px;}
+    .motofiniti_main .explore .listing ul li {padding-left: 27px;margin-bottom: 13px !important;line-height: 30px;}
+    .motofiniti_main .how_it_works{padding: 45px 0;}
+    .motofiniti_main .how_it_works .header p{max-width: 800px;}
+    .motofiniti_main .how_it_works .content .hit_one .img {width: 170px;height: 130px; background-size: 90%;}
+    .motofiniti_main .how_it_works .content .hit_one .img img {max-width: 24px;margin-top: -12px;}
+    .motofiniti_main .how_it_works .content {margin-top: 40px;}
+    .motofiniti_main footer .footer_wrapper{padding: 40px 0;}
+    .motofiniti_main footer .footer_heading {font-size: 19px;margin-bottom: 22px;}
+    .motofiniti_main footer .download img {max-width: 115px;margin-right: 10px;}
+    .motofiniti_main footer .contact a::after {width: 25px;height: 15px;background-size: 18px;}
+    .motofiniti_main footer .contact a{padding-left: 28px;}
+    .motofiniti_main footer .follow a img{max-width: 28px;}
+    .motofiniti_main footer .copyright {padding: 10px 0}
+    .motofiniti_main footer .copyright p, .motofiniti_main footer .copyright .footer_links a {font-size: 14px;line-height: 28px;}
+}
+
+@media (max-width: 1199px){
+    .motofiniti_main .container{max-width: 960px;}
+    .motofiniti_main .home_banner .left_content {width: 350px;}
+    .motofiniti_main .home_banner .content h1 {font-size: 29px;margin-bottom: 12px;}
+    .motofiniti_main .home_banner .logo {margin-bottom: 32px;}
+    .motofiniti_main .home_banner .content p {font-size: 14px;line-height: 28px;}
+    .motofiniti_main .home_banner .content {margin-bottom: 22px;}
+    .motofiniti_main .home_banner .action_btns a img {max-width: 125px;}
+    .motofiniti_main .home_banner::after {width: 600px;height: 542px;}
+    .motofiniti_main .discover .inner_wrapper {max-width: 550px;}
+    .motofiniti_main .discover .list_features .list_one h3 {font-size: 16px;margin-bottom: 10px;}
+    .motofiniti_main .discover .list_features .list_one{width: calc(50% - 10px); margin-bottom: 10px;}
+    .motofiniti_main .header h2 {font-size: 26px;padding-bottom: 18px;margin-bottom: 22px;}
+    .motofiniti_main .explore .listing ul li::after{top: 9px; transform: none; width: 11px; height: 11px;}
+    .motofiniti_main .explore .listing ul li{margin-bottom: 10px !important;}
+}
+
+@media (max-width: 991px){
+    .motofiniti_main .container{max-width: 740px;}
+    .motofiniti_main .home_banner .left_content {width: 300px;}
+    .motofiniti_main .home_banner .content h1{font-size: 25px;}
+    .motofiniti_main .home_banner .action_btns a img {max-width: 110px;}
+    .motofiniti_main .home_banner .content {margin-bottom: 18px;}
+    .motofiniti_main .home_banner::after {width: 420px;height: 370px;}
+    .motofiniti_main .home_banner {padding: 120px 0 140px;}
+    .motofiniti_main .discover .inner_wrapper {max-width: 400px;}
+    .motofiniti_main .discover .list_features {margin-top: 410px;}
+    .motofiniti_main .discover {background-position-y: 180px;background-position-x: center; background-size: 350px;}
+    .motofiniti_main .discover .inner_wrapper{max-width: 100%;}
+    .motofiniti_main .explore{padding-top: 40px;}
+    .motofiniti_main .explore .explore_content {margin-top: 45px;}
+    .motofiniti_main .explore.categories .row{flex-direction: column-reverse;}
+    .motofiniti_main .explore.categories .explore_content{margin-top: 25px;}
+    .motofiniti_main .explore.categories{padding-top: 35px;}
+    .motofiniti_main .how_it_works{padding: 35px 0;}
+    .motofiniti_main .how_it_works .content .hit_one{margin-bottom: 30px;}
+    .motofiniti_main .discover .list_features .list_one{padding-left: 30px;}
+    .motofiniti_main .discover .list_features .list_one h3::after{left: -26px; width: 12px; height: 12px;}
+}
+
+@media (max-width: 767px){
+    .motofiniti_main .container{padding: 0 12px;}
+    .motofiniti_main .home_banner {padding: 160px 0 300px;}
+    .motofiniti_main .home_banner .left_content{width: 100%; text-align: center;}
+    .motofiniti_main .home_banner .logo img{max-width: 300px;}
+    .motofiniti_main .home_banner::after {width: 300px;height: 270px; left: 50%; right: auto; transform: translateX(-50%);}
+    .motofiniti_main .discover{padding: 35px 0 10px;}
+    .motofiniti_main .header h2 {font-size: 22px;padding-bottom: 16px;margin-bottom: 20px;}
+    .motofiniti_main .discover{background-position-y: 162px;}
+    .motofiniti_main .explore .col-lg-7 img{padding-right: 0 !important; padding-left: 0 !important;}
+    .motofiniti_main .explore .listing ul li::after{top: 8px;}
+    .motofiniti_main .explore .listing ul li{padding-left: 26px;} 
+    .motofiniti_main .explore.categories{padding-bottom: 20px;}
+    .motofiniti_main .explore .explore_content{margin-top: 30px;}
+    .motofiniti_main footer .footer_wrapper{display: block; text-align: center;}
+    .motofiniti_main footer .contact{margin: 40px 0;}
+    .motofiniti_main footer .footer_heading {font-size: 18px;margin-bottom: 10px;}
+    .motofiniti_main footer .contact a{display: table; margin: auto; line-height: initial;}
+    .motofiniti_main footer .copyright{display: block; text-align: center;}
+    .motofiniti_main .header h2::after{height: 2px;}
+}
+
+@media (max-width: 575px){
+    .motofiniti_main .header h2{font-size: 20px;}
+    .motofiniti_main .discover .header p{max-width: 380px;}
+    .motofiniti_main .discover {background-position-y: 195px;}
+    .motofiniti_main .discover .list_features .list_one{width: 100%; margin-bottom: 5px;}
+    .motofiniti_main .discover .list_features .list_one h3{font-size: 15px; margin-bottom: 8px;}
+    .motofiniti_main .header h2::after{width: 60px;}
+    .motofiniti_main .how_it_works .content .hit_one h3{font-size: 18px; margin-bottom: 8px;}
+    .motofiniti_main .how_it_works{padding: 35px 0 10px;}
+    .motofiniti_main .home_banner .logo img{max-width: 280px;}
+    .motofiniti_main .discover .list_features .list_one{padding-left: 22px;}
+    .motofiniti_main .discover .list_features .list_one h3::after{left: -24px; width: 11px; height: 11px;}
+    .motofiniti_main .explore .listing ul li{margin-bottom: 8px !important;}
+    .motofiniti_main footer .copyright p, .motofiniti_main footer .copyright .footer_links a{font-size: 12px;}
+    .motofiniti_main footer .copyright .footer_links a:not(:first-child)::after{left: 1px;}
+}
+
+@media (max-width: 340px){
+    .motofiniti_main .home_banner .logo img{max-width: 260px;}
+    .motofiniti_main .home_banner .content h1{font-size: 22px;}
+}
