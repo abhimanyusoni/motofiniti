@@ -392,6 +392,72 @@ ul, li {
   font-size: 18px;
 }
 
+.motofiniti_main .common_div .banner {
+  background: url(../images/banner_bg.svg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.motofiniti_main .common_div .banner .logo_img {
+  position: absolute;
+  width: 200px;
+  top: 30px;
+  left: 40px;
+}
+
+.motofiniti_main .common_div .banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.motofiniti_main .common_div .tnc {
+  padding: 60px 0;
+  font-size: 18px;
+}
+
+.motofiniti_main .common_div .tnc p {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.motofiniti_main .common_div .tnc .common_title {
+  color: #CA1928;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+.motofiniti_main .common_div .tnc ul li {
+  padding-left: 30px;
+  position: relative;
+  font-size: 18px;
+}
+
+.motofiniti_main .common_div .tnc ul li::after {
+  content: '';
+  position: absolute;
+  width: auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 3px solid #CA1928;
+  left: 0;
+  top: 14px;
+}
+
 @media (max-width: 1700px) {
   body {
     font-size: 18px;
@@ -634,6 +700,17 @@ ul, li {
     font-size: 16px;
     line-height: 30px;
   }
+  .motofiniti_main .common_div .tnc .common_title {
+    font-size: 24px;
+  }
+  .motofiniti_main .common_div .tnc p, .motofiniti_main .common_div .tnc ul li {
+    font-size: 16px;
+  }
+  .motofiniti_main .common_div .tnc ul li::after {
+    width: 11px;
+    height: 11px;
+    top: 15px;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -770,6 +847,32 @@ ul, li {
     font-size: 14px;
     line-height: 28px;
   }
+  .motofiniti_main .common_div .tnc .common_title {
+    font-size: 20px;
+  }
+  .motofiniti_main .common_div .tnc p, .motofiniti_main .common_div .tnc ul li {
+    font-size: 14px;
+  }
+  .motofiniti_main .common_div .tnc ul li::after {
+    width: 10px;
+    height: 10px;
+    top: 13px;
+  }
+  .motofiniti_main .common_div .tnc .common_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 22px;
+  }
+  .motofiniti_main .common_div .tnc p {
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+  .motofiniti_main .common_div .tnc ul li {
+    line-height: 38px;
+  }
+  .motofiniti_main .common_div .banner h1 {
+    font-size: 38px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -825,6 +928,19 @@ ul, li {
   }
   .motofiniti_main .explore .listing ul li {
     margin-bottom: 10px !important;
+  }
+  .motofiniti_main .common_div .banner {
+    height: 70vh;
+  }
+  .motofiniti_main .common_div .tnc {
+    padding: 40px 0;
+    font-size: 14px;
+  }
+  .motofiniti_main .common_div .tnc .common_title {
+    font-size: 20px;
+  }
+  .motofiniti_main .common_div .banner h1 {
+    font-size: 32px;
   }
 }
 
@@ -896,6 +1012,10 @@ ul, li {
     left: -26px;
     width: 12px;
     height: 12px;
+  }
+  .motofiniti_main .common_div .banner .logo_img {
+    position: unset;
+    margin-bottom: 14px;
   }
 }
 
@@ -970,6 +1090,21 @@ ul, li {
   }
   .motofiniti_main .header h2::after {
     height: 2px;
+  }
+  .motofiniti_main .common_div .banner h1 {
+    font-size: 26px;
+  }
+  .motofiniti_main .common_div .banner {
+    height: 80vh;
+  }
+  .motofiniti_main .common_div .tnc {
+    padding: 20px 0;
+  }
+  .motofiniti_main .common_div .tnc ul li {
+    padding-left: 24px;
+  }
+  .motofiniti_main .common_div .banner .logo_img {
+    max-width: 160px;
   }
 }
 
