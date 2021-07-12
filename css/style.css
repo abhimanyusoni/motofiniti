@@ -918,6 +918,9 @@ ul, li {
     font-size: 16px;
     line-height: 28px;
   }
+  .motofiniti_main .common_div .tnc h6 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1215,6 +1218,12 @@ ul, li {
   }
   .motofiniti_main .how_it_works .content .hit_one .img img {
     margin-top: -15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .motofiniti_main .common_div .tnc h6 {
+    font-size: 12px;
   }
 }
 

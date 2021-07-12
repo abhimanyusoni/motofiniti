@@ -589,6 +589,7 @@ ul, li{
     .motofiniti_main .common_div .banner h1{font-size: 38px;}
     .motofiniti_main .common_div .tnc{padding: 30px 0;}
     .motofiniti_main .common_div .tnc h5{font-size: 16px; line-height: 28px;}
+    .motofiniti_main .common_div .tnc h6{font-size: 14px;}
 }
 
 @media (max-width: 1199px){
@@ -685,6 +686,10 @@ ul, li{
     .motofiniti_main footer .copyright p, .motofiniti_main footer .copyright .footer_links a{font-size: 12px;}
     .motofiniti_main footer .copyright .footer_links a:not(:first-child)::after{left: 1px;}
     .motofiniti_main .how_it_works .content .hit_one .img img{margin-top: -15px;}
+}
+
+@media (max-width: 360px){
+    .motofiniti_main .common_div .tnc h6{font-size: 12px;}
 }
 
 @media (max-width: 340px){
