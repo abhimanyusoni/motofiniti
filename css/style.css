@@ -426,6 +426,22 @@ ul, li {
   font-size: 18px;
 }
 
+.motofiniti_main .common_div .tnc h5 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.motofiniti_main .common_div .tnc h6 {
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid #CA1928;
+  padding-bottom: 2px;
+  display: table;
+  margin: 20px 0 15px;
+}
+
 .motofiniti_main .common_div .tnc p {
   font-size: 18px;
   line-height: 32px;
@@ -456,6 +472,22 @@ ul, li {
   border: 3px solid #CA1928;
   left: 0;
   top: 14px;
+}
+
+.motofiniti_main .common_div .tnc ul li ul li {
+  padding-left: 25px;
+}
+
+.motofiniti_main .common_div .tnc ul li ul li::after {
+  background: #CA1928;
+}
+
+.motofiniti_main .common_div .tnc ul li a {
+  color: #CA1928;
+}
+
+.motofiniti_main .common_div .tnc ul li p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1700px) {
@@ -711,6 +743,12 @@ ul, li {
     height: 11px;
     top: 15px;
   }
+  .motofiniti_main .common_div .tnc h5 {
+    font-size: 18px;
+  }
+  .motofiniti_main .common_div .tnc h6 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -875,6 +913,10 @@ ul, li {
   }
   .motofiniti_main .common_div .tnc {
     padding: 30px 0;
+  }
+  .motofiniti_main .common_div .tnc h5 {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
@@ -1113,6 +1155,10 @@ ul, li {
   }
   .motofiniti_main .common_div .tnc ul li {
     padding-left: 24px;
+    line-height: 32px;
+  }
+  .motofiniti_main .common_div .tnc ul li::after {
+    top: 11px;
   }
   .motofiniti_main .common_div .banner .logo_img {
     max-width: 160px;
